@@ -1,0 +1,43 @@
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.exe
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.deps.json
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.runtimeconfig.json
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfoInputs.cache
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfo.cs
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\refint\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.genruntimeconfig.cache
+C:\Users\Laplace\Desktop\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ref\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.exe
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.deps.json
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.runtimeconfig.json
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfoInputs.cache
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfo.cs
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.sourcelink.json
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\refint\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.genruntimeconfig.cache
+C:\Users\Laplace\Desktop\ООП 4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ref\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.exe
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.deps.json
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.runtimeconfig.json
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\bin\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfoInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.AssemblyInfo.cs
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\refint\ООП Лаба 1 частина з консолью.dll
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.pdb
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ООП Лаба 1 частина з консолью.genruntimeconfig.cache
+C:\Users\Laplace\Desktop\OOP-4\ООП лаба 1\ООП Лаба 1 частина з консолью\obj\Debug\net8.0\ref\ООП Лаба 1 частина з консолью.dll

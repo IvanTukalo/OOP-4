@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ООП Лаба 1 частина з консолью/1.0.0": {
+        "runtime": {
+          "ООП Лаба 1 частина з консолью.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ООП Лаба 1 частина з консолью/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
