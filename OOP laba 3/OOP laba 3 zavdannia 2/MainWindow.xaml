@@ -1,0 +1,14 @@
+﻿<Window x:Class="ButtonGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Життєвий тест" Height="300" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip">
+    <Canvas Name="MainCanvas" Background="White" MouseMove="MainCanvas_MouseMove">
+        <TextBlock x:Name="QuestionText" Text="Чи задоволені ви життям?" FontSize="18" Canvas.Left="92" Canvas.Top="85" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Button x:Name="YesButton" Content="Так" Width="80" Height="30" Click="YesButton_Click" Canvas.Left="92" Canvas.Top="142"/>
+
+        <Button x:Name="NoButton" Content="Ні" Width="80" Height="30" Click="NoButton_Click" Canvas.Left="229" Canvas.Top="142" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
