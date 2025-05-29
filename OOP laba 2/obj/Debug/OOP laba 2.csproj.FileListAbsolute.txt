@@ -10,6 +10,5 @@ C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\obj\Debug\OOP laba 2.csproj.CoreCompil
 C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\bin\Debug\OOP laba 2.exe.config
 C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\bin\Debug\OOP laba 2.exe
 C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\bin\Debug\OOP laba 2.pdb
-C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\obj\Debug\OOP laba 2_MarkupCompile.lref
 C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\obj\Debug\OOP laba 2.exe
 C:\Users\Laplace\Desktop\OOP-4\OOP laba 2\obj\Debug\OOP laba 2.pdb

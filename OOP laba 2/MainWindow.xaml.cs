@@ -10,12 +10,11 @@ namespace OOP_laba_2
     {
         private readonly CalculatorEngine _calculator;      // Основна логіка обчислень
         private readonly CommandManager _commandManager;    // Управління командами (Undo/Redo)
-        private bool _isScientificMode = false;             // Чи ввімкнена наука
+        private bool _isScientificMode = false;             // Чи ввімкнена науковий режим
 
         public MainWindow()
         {
             InitializeComponent();
-
             _calculator = new CalculatorEngine();
             _commandManager = new CommandManager();
 
@@ -33,7 +32,6 @@ namespace OOP_laba_2
         {
             ResultDisplay.Text = _calculator.DisplayValue;
             CalculationDisplay.Text = _calculator.CalculationExpression;
-
         }
 
 
@@ -96,7 +94,6 @@ namespace OOP_laba_2
                     break;
                 case Key.Decimal:
                 case Key.OemPeriod:
-                case Key.OemComma:
                     Decimal_Click(null, null);
                     break;
                 case Key.Z:
@@ -108,7 +105,7 @@ namespace OOP_laba_2
             }
         }
 
-    
+
         /// Обробка вводу числа
 
         private void Number_Click(object sender, RoutedEventArgs e)
@@ -117,7 +114,7 @@ namespace OOP_laba_2
             ProcessNumberInput(number);
         }
 
-    
+
         /// Обробка десяткового роздільника
 
         private void Decimal_Click(object sender, RoutedEventArgs e)
@@ -131,16 +128,25 @@ namespace OOP_laba_2
             UpdateDisplay();
         }
 
-    
+
         /// Обробка операцій (+, -, *, /)
 
         private void Operator_Click(object sender, RoutedEventArgs e)
         {
-            string op = ((Button)sender).Content.ToString();
+            string opSymbol = ((Button)sender).Content.ToString();
+            string op;
+
+            switch (opSymbol)
+            {
+                case "×": op = "*"; break;
+                case "÷": op = "/"; break;
+                default: op = opSymbol; break;
+            }
+
             ProcessOperator(op);
         }
 
-    
+
         /// Обробка кнопки =
 
         private void Equals_Click(object sender, RoutedEventArgs e)
@@ -148,7 +154,7 @@ namespace OOP_laba_2
             CalculateResult();
         }
 
-    
+
         /// Обробка кнопки C
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -159,7 +165,17 @@ namespace OOP_laba_2
             UpdateDisplay();
         }
 
-    
+
+        /// Обробка кнопки CE — очищує всю чергу
+
+        private void ClearAll_Click(object sender, RoutedEventArgs e)
+        {
+            _commandManager.Clear(); // Очищуємо всю історію
+            _calculator.Clear();     // Очищуємо все
+            UpdateDisplay();
+        }
+
+
         /// Обробка кнопки Backspace
 
         private void Backspace_Click(object sender, RoutedEventArgs e)
@@ -175,12 +191,11 @@ namespace OOP_laba_2
             {
                 var command = new BackspaceCommand(_calculator);
                 _commandManager.ExecuteCommand(command);
-
                 UpdateDisplay();
             }
         }
 
-    
+
         /// Обробка кнопки Undo
 
         private void Undo_Click(object sender, RoutedEventArgs e)
@@ -189,7 +204,7 @@ namespace OOP_laba_2
             UpdateDisplay();
         }
 
-    
+
         /// Обробка кнопки Redo
 
         private void Redo_Click(object sender, RoutedEventArgs e)
@@ -198,7 +213,7 @@ namespace OOP_laba_2
             UpdateDisplay();
         }
 
-    
+
         /// Переключення між базовим і науковим режимом
 
         private void ToggleScientific_Click(object sender, RoutedEventArgs e)
@@ -233,8 +248,8 @@ namespace OOP_laba_2
             }
         }
 
-    
-        /// Обробка математичних функцій (π, √, x², ln тощо)
+
+        /// Обробка математичних функцій (π, √, x², ln, lg)
 
         private void Scientific_Click(object sender, RoutedEventArgs e)
         {
@@ -249,8 +264,31 @@ namespace OOP_laba_2
 
             try
             {
-                var command = new ScientificCommand(_calculator, operation);
-                _commandManager.ExecuteCommand(command);
+                switch (operation)
+                {
+                    case "π":
+                        // Перевіряємо, чи можна ввести π
+                        if (!_calculator.IsNewOperation)
+                        {
+                            return;
+                        }
+                        var commandPi = new InputCommand(_calculator, Math.PI.ToString("F8"));
+                        _commandManager.ExecuteCommand(commandPi);
+                        break;
+                    case "e":
+                        // Перевіряємо, чи можна ввести e
+                        if (!_calculator.IsNewOperation)
+                        {
+                            return;
+                        }
+                        var commandE = new InputCommand(_calculator, Math.E.ToString("F8"));
+                        _commandManager.ExecuteCommand(commandE);
+                        break;
+                    default:
+                        var command = new ScientificCommand(_calculator, operation);
+                        _commandManager.ExecuteCommand(command);
+                        break;
+                }
 
                 UpdateDisplay();
             }
@@ -261,7 +299,82 @@ namespace OOP_laba_2
             }
         }
 
-    
+
+        /// Змінює знак числа
+
+        private void SignChange_Click(object sender, RoutedEventArgs e)
+        {
+            if (_calculator.IsInErrorState)
+            {
+                _calculator.ResetErrorState();
+                UpdateDisplay();
+                return;
+            }
+
+            try
+            {
+                double value = double.Parse(_calculator.DisplayValue);
+                var command = new SignChangeCommand(_calculator, value);
+                _commandManager.ExecuteCommand(command);
+                UpdateDisplay();
+            }
+            catch
+            {
+                _calculator.SetErrorState();
+                UpdateDisplay();
+            }
+        }
+
+
+        /// Піднести число до степеня x
+
+        private void PowerX_Click(object sender, RoutedEventArgs e)
+        {
+            if (_calculator.IsInErrorState)
+            {
+                _calculator.ResetErrorState();
+                UpdateDisplay();
+                return;
+            }
+
+            try
+            {
+                var command = new PowerXCommand(_calculator);
+                _commandManager.ExecuteCommand(command);
+                UpdateDisplay();
+            }
+            catch
+            {
+                _calculator.SetErrorState();
+                UpdateDisplay();
+            }
+        }
+
+
+        /// Обчислення остачі від ділення
+
+        private void Modulo_Click(object sender, RoutedEventArgs e)
+        {
+            if (_calculator.IsInErrorState)
+            {
+                _calculator.ResetErrorState();
+                UpdateDisplay();
+                return;
+            }
+
+            try
+            {
+                var command = new ModuloCommand(_calculator);
+                _commandManager.ExecuteCommand(command);
+                UpdateDisplay();
+            }
+            catch
+            {
+                _calculator.SetErrorState();
+                UpdateDisplay();
+            }
+        }
+
         /// Виконує операцію
 
         private void ProcessNumberInput(string number)
@@ -275,7 +388,7 @@ namespace OOP_laba_2
             UpdateDisplay();
         }
 
-    
+
         /// Встановлює операцію (+, -, * або /)
 
         private void ProcessOperator(string op)
@@ -300,7 +413,7 @@ namespace OOP_laba_2
             }
         }
 
-    
+
         /// Виконує обчислення
 
         private void CalculateResult()
@@ -312,7 +425,6 @@ namespace OOP_laba_2
             {
                 var command = new CalculateCommand(_calculator);
                 _commandManager.ExecuteCommand(command);
-
                 UpdateDisplay();
             }
             catch
@@ -321,7 +433,6 @@ namespace OOP_laba_2
                 UpdateDisplay();
             }
         }
-
     }
 
 
@@ -361,12 +472,12 @@ namespace OOP_laba_2
         {
             if (IsNewOperation)
             {
-                DisplayValue = "0,";
+                DisplayValue = "0.";
                 IsNewOperation = false;
             }
-            else if (!DisplayValue.Contains(","))
+            else if (!DisplayValue.Contains("."))
             {
-                DisplayValue += ",";
+                DisplayValue += ".";
             }
         }
 
@@ -399,7 +510,7 @@ namespace OOP_laba_2
             }
             else
             {
-                if (DisplayValue == "0" && number != ",")
+                if (DisplayValue == "0" && number != ".")
                     DisplayValue = number;
                 else
                     DisplayValue += number;
@@ -408,8 +519,19 @@ namespace OOP_laba_2
 
         public void ApplyOperator(string op)
         {
-            CalculationExpression = $"{DisplayValue} {op}";
-            IsNewOperation = true;
+            if (!string.IsNullOrEmpty(DisplayValue))
+            {
+                if (!string.IsNullOrEmpty(CalculationExpression) && !IsNewOperation)
+                {
+                    CalculationExpression += $" ({DisplayValue})";
+                }
+                else
+                {
+                    CalculationExpression = $"{DisplayValue} {op}";
+                }
+
+                IsNewOperation = true;
+            }
         }
 
         public void PerformScientificOperation(string operation, out string oldDisplay, out string oldExpression)
@@ -450,6 +572,12 @@ namespace OOP_laba_2
                     result = Math.Log(input);
                     newExpression = $"ln({input})";
                     break;
+                case "lg":
+                    if (input <= 0)
+                        throw new ArgumentException("lg on non-positive");
+                    result = Math.Log10(input);
+                    newExpression = $"lg({input})";
+                    break;
                 default:
                     throw new ArgumentException("Unknown operation");
             }
@@ -466,10 +594,12 @@ namespace OOP_laba_2
             oldExpression = CalculationExpression;
 
             string[] parts = CalculationExpression.Split(' ');
-            if (!double.TryParse(parts[0], out firstOperand))
+
+            if (parts.Length < 2 || !double.TryParse(parts[0], out firstOperand))
                 throw new ArgumentException("Invalid expression");
 
             op = parts[1];
+
             if (!double.TryParse(DisplayValue, out secondOperand))
                 throw new ArgumentException("Invalid operand");
 
@@ -485,11 +615,19 @@ namespace OOP_laba_2
                         throw new DivideByZeroException();
                     result = firstOperand / secondOperand;
                     break;
+                case "%":
+                    if (secondOperand == 0)
+                        throw new DivideByZeroException();
+                    result = firstOperand % secondOperand;
+                    break;
+                case "^":
+                    result = Math.Pow(firstOperand, secondOperand);
+                    break;
                 default:
                     throw new ArgumentException("Unknown operator");
             }
 
-            CalculationExpression = $"{CalculationExpression} {DisplayValue} =";
+            CalculationExpression = $"{CalculationExpression} ({DisplayValue}) =";
             DisplayValue = result.ToString();
             IsNewOperation = true;
         }
@@ -537,6 +675,12 @@ namespace OOP_laba_2
                 command.Execute();
                 _undoStack.Push(command);
             }
+        }
+
+        public void Clear()
+        {
+            _undoStack.Clear();
+            _redoStack.Clear();
         }
     }
 
@@ -634,7 +778,7 @@ namespace OOP_laba_2
     }
 
 
-    /// Команда наукової операції (π, √, x², ln тощо)
+    /// Команда наукової операції (π, √, x², ln, lg)
 
     public class ScientificCommand : CalculatorCommand
     {
@@ -656,5 +800,49 @@ namespace OOP_laba_2
         public ClearCommand(CalculatorEngine calculator) : base(calculator) { }
 
         public override void Execute() => _calculator.Clear();
+    }
+
+
+    /// Команда зміни знаку
+
+    public class SignChangeCommand : CalculatorCommand
+    {
+        private readonly double _value;
+
+        public SignChangeCommand(CalculatorEngine calculator, double value) : base(calculator)
+        {
+            _value = value;
+        }
+
+        public override void Execute()
+        {
+            _calculator.SetDisplayValue((-_value).ToString());
+        }
+    }
+
+
+    /// Команда піднесення до степеня x
+
+    public class PowerXCommand : CalculatorCommand
+    {
+        public PowerXCommand(CalculatorEngine calculator) : base(calculator) { }
+
+        public override void Execute()
+        {
+            _calculator.ApplyOperator("^");
+        }
+    }
+
+
+    /// Команда остачі від ділення
+
+    public class ModuloCommand : CalculatorCommand
+    {
+        public ModuloCommand(CalculatorEngine calculator) : base(calculator) { }
+
+        public override void Execute()
+        {
+            _calculator.ApplyOperator("%");
+        }
     }
 }
