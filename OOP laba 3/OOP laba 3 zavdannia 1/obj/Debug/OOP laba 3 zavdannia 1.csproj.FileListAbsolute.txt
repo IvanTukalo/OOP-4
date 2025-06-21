@@ -1,0 +1,14 @@
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\bin\Debug\OOP laba 3 zavdannia 1.exe.config
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\bin\Debug\OOP laba 3 zavdannia 1.exe
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\bin\Debug\OOP laba 3 zavdannia 1.pdb
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.csproj.AssemblyReference.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\MainWindow.baml
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\MainWindow.g.cs
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\App.g.cs
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1_MarkupCompile.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.g.resources
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP_laba_3_zavdannia_1.Properties.Resources.resources
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.csproj.GenerateResource.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.exe
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 3\OOP laba 3 zavdannia 1\obj\Debug\OOP laba 3 zavdannia 1.pdb

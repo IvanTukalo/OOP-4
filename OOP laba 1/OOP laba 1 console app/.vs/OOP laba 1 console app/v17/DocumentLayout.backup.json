@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 console app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9B354B-14BF-4AFE-874C-362E84DCA4D5}|OOP laba 1 console app.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 1\\oop laba 1 console app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9B354B-14BF-4AFE-874C-362E84DCA4D5}|OOP laba 1 console app.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 console app\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 console app\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T16:53:44.614Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+﻿<Window x:Class="OOP_laba_1_zavdanya_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="СуперМегаКнопка"
+        Height="250" Width="450"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border x:Name="MainBorder" CornerRadius="0" Background="White" BorderBrush="White" BorderThickness="1">
+        <DockPanel Height="250" VerticalAlignment="Center">
+
+            <!-- Заголовок із кнопками -->
+            <Grid Background="#FFDDDDDD" Height="30" DockPanel.Dock="Top" MouseDown="TitleBar_MouseDown">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="СуперМегаКнопка" VerticalAlignment="Center" Margin="10,0" FontWeight="Bold"/>
+                <Button Content="─" Width="30" Grid.Column="1" Click="Minimize_Click" Padding="0"/>
+                <Button Content="☐" Width="30" Grid.Column="2" Click="MaximizeRestore_Click" Padding="0"/>
+                <Button Content="X" Width="30" Grid.Column="3" Click="Close_Click" Padding="0"/>
+            </Grid>
+
+            <!-- Основний інтерфейс -->
+            <StackPanel Margin="10">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                    <Button x:Name="btnTransparency" Content="Прозорість" Click="btnTransparency_Click" Margin="5"/>
+                    <Button x:Name="btnBackground" Content="Колір тла" Click="btnBackground_Click" Margin="5"/>
+                    <Button x:Name="btnHello" Content="Hello World" Click="btnHello_Click" Margin="5"/>
+                </StackPanel>
+
+                <Button x:Name="btnSuper" Content="Супернегакнопка" Click="btnSuper_Click" Height="40" Margin="0,10"/>
+
+                <CheckBox Content="Суперкнопка виконує Прозорість" Checked="chkTransparency_Checked" Unchecked="chkTransparency_Unchecked"/>
+                <CheckBox Content="Суперкнопка виконує Колір тла" Checked="chkBackground_Checked" Unchecked="chkBackground_Unchecked"/>
+                <CheckBox Content="Суперкнопка виконує Hello World" Checked="chkHello_Checked" Unchecked="chkHello_Unchecked"/>
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</Window>
