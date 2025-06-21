@@ -67,7 +67,6 @@ class Program
         // Запуск у фоновому потоці
         timer1.StartAsync();
         timer2.StartAsync();
-
         Console.WriteLine("Натисніть Enter для зупинки.");
         Console.ReadLine();
 
@@ -75,6 +74,7 @@ class Program
         timer1.Stop();
         timer2.Stop();
     }
+
 
     class Timer
     {
