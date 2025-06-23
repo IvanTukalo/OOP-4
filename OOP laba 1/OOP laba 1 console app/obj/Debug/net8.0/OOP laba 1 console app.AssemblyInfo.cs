@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OOP laba 1 console app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7854d1e0c6e348994e831fa901e289e8062ce9d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("OOP laba 1 console app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OOP laba 1 console app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

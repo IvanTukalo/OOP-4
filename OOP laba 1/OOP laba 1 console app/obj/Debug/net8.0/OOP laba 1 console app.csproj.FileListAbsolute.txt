@@ -1,0 +1,15 @@
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\bin\Debug\net8.0\OOP laba 1 console app.exe
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\bin\Debug\net8.0\OOP laba 1 console app.deps.json
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\bin\Debug\net8.0\OOP laba 1 console app.runtimeconfig.json
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\bin\Debug\net8.0\OOP laba 1 console app.dll
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\bin\Debug\net8.0\OOP laba 1 console app.pdb
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.AssemblyInfoInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.AssemblyInfo.cs
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.sourcelink.json
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.dll
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\refint\OOP laba 1 console app.dll
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.pdb
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\OOP laba 1 console app.genruntimeconfig.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 1\OOP laba 1 console app\obj\Debug\net8.0\ref\OOP laba 1 console app.dll
