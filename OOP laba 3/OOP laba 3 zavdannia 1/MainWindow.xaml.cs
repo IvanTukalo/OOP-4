@@ -222,14 +222,6 @@ namespace ButtonGenerator
             txtRemoveMultiple.Clear();
         }
 
-        private void ClearInputFields()
-        {
-            txtFrom.Clear();
-            txtTo.Clear();
-            txtStep.Clear();
-            txtRemoveMultiple.Clear();
-        }
-
         private void Window_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Handled) return;
@@ -265,14 +257,14 @@ namespace ButtonGenerator
                 e.Handled = true;
 
                 var allFocusableElements = new List<UIElement>
-        {
-            txtFrom,
-            txtTo,
-            txtStep,
-            btnGenerate,
-            txtRemoveMultiple,
-            btnRemove
-        };
+                {
+                    txtFrom,
+                    txtTo,
+                    txtStep,
+                    btnGenerate,
+                    txtRemoveMultiple,
+                    btnRemove
+                };
 
                 foreach (var item in buttonContainer.Items)
                 {
