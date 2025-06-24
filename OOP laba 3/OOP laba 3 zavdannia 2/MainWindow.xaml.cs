@@ -8,7 +8,7 @@ namespace ButtonGenerator
     public partial class MainWindow : Window
     {
         private const double AvoidRadius = 80; // Радіус дії "відштовхування"
-        private const double MoveStep = 10;    // На скільки переміщується кнопка
+        private const double MoveStep = 15;    // На скільки переміщується кнопка
 
         public MainWindow()
         {
