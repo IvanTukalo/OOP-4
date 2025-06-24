@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 5\\oop laba 5 zavdannia 1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 5\\oop laba 5 zavdannia 1\\horse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84376AE1-DE50-4364-A478-D3E9EFD37430}|OOP laba 5 zavdannia 1.csproj|solutionrelative:horse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Horse.cs",
+              "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 1\\Horse.cs",
+              "RelativeDocumentMoniker": "Horse.cs",
+              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 1\\Horse.cs",
+              "RelativeToolTip": "Horse.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAIA7wFYAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:43:09.95Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,

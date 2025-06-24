@@ -1,12 +1,90 @@
-﻿<Window x:Class="OOP_laba_5_zavdannia_1.MainWindow"
+﻿<Window x:Class="HorseRaceSimulator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:OOP_laba_5_zavdannia_1"
+        xmlns:local="clr-namespace:HorseRaceSimulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Симулятор кінних перегонів" Height="720" Width="1280">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Панель керування -->
+            <RowDefinition Height="*"/>
+            <!-- Поле для перегонів -->
+            <RowDefinition Height="200"/>
+            <!-- Таблиця результатів -->
+        </Grid.RowDefinitions>
+
+        <!-- Верхня панель керування -->
+        <Border Grid.Row="0" Background="#F0F0F0" Padding="10" BorderBrush="Gray" BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal">
+                <!-- Секція ставок -->
+                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
+                    <TextBlock Text="Ваш баланс:" FontWeight="Bold"/>
+                    <TextBlock x:Name="BalanceText" Text="250 $" FontSize="16"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
+                    <TextBlock Text="Ставка на:" FontWeight="Bold"/>
+                    <ComboBox x:Name="HorsesComboBox" Width="120" DisplayMemberPath="Name"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
+                    <TextBlock Text="Сума ставки:" FontWeight="Bold"/>
+                    <TextBox x:Name="BetAmountTextBox" Text="20" Width="60" TextAlignment="Right"/>
+                </StackPanel>
+
+                <Button x:Name="BetButton" Content="Зробити ставку" VerticalAlignment="Bottom" Padding="10,5" Click="BetButton_Click"/>
+
+                <!-- Секція керування симуляцією -->
+                <Button x:Name="StartButton" Content="СТАРТ" Margin="50,0,0,0" VerticalAlignment="Bottom" Padding="20,5" FontWeight="Bold" Background="LightGreen" Click="StartButton_Click"/>
+
+                <StackPanel Orientation="Vertical" Margin="50,0,0,0">
+                    <TextBlock Text="Кількість учасників:" FontWeight="Bold"/>
+                    <ComboBox x:Name="HorseCountComboBox" SelectedIndex="3" Width="50" SelectionChanged="HorseCountComboBox_SelectionChanged">
+                        <ComboBoxItem Content="2"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="6"/>
+                        <ComboBoxItem Content="7"/>
+                        <ComboBoxItem Content="8"/>
+                        <ComboBoxItem Content="9"/>
+                        <ComboBoxItem Content="10"/>
+                    </ComboBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+
+        <!-- Ігрове поле -->
+        <Canvas Name="canvas" Grid.Column="1" Grid.Row="0" >
+            <Image 
+        Width="{Binding ActualWidth, ElementName=canvas}"
+        Height="434"
+       Canvas.Left="0" Canvas.Top="64"
+       Stretch="Fill"
+       Source="C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\Images\Background\Track.png" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        </Canvas>
+
+        <!-- Таблиця результатів -->
+        <DataGrid Grid.Row="2" x:Name="ResultsGrid" AutoGenerateColumns="False" CanUserSortColumns="True"
+                  IsReadOnly="True" ItemsSource="{Binding Horses}" MaxHeight="250">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Позиція" Binding="{Binding DisplayPosition, Mode=OneWay}" SortDirection="Descending"/>
+                <DataGridTemplateColumn Header="Колір">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Rectangle Fill="{Binding ColorBrush}" Width="20" Height="20" Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Ім'я" Binding="{Binding Name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Час" Binding="{Binding RaceTime, Mode=OneWay, StringFormat='mm\\:ss\\.fff'}"/>
+                <DataGridTextColumn Header="Коефіцієнт" Binding="{Binding Coefficient, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Ваша ставка" Binding="{Binding BetAmount, Mode=OneWay, StringFormat=C}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

@@ -33,16 +33,6 @@ namespace OOP_laba_2
             ResultDisplay.Text = _calculator.DisplayValue;
             CalculationDisplay.Text = _calculator.CalculationExpression;
         }
-        private void EnableInput(bool enable)
-        {
-            foreach (UIElement child in ButtonsGrid.Children)
-            {
-                if (child is Button button && !button.Content.ToString().Equals("="))
-                {
-                    button.IsEnabled = enable;
-                }
-            }
-        }
         private bool IsInputTooLong(string text)
         {
             return text.Length > 22;

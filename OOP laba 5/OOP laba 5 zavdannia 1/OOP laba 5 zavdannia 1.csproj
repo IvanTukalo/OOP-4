@@ -49,6 +49,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WriteableBitmapEx.Wpf, Version=1.6.8.0, Culture=neutral, PublicKeyToken=50375ca6144f1c69, processorArchitecture=MSIL">
+      <HintPath>packages\WriteableBitmapEx.1.6.8\lib\net40\WriteableBitmapEx.Wpf.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -63,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Horse.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +90,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +98,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Background\Track.png" />
+    <Resource Include="Images\HorsesMask\mask_0000.png" />
+    <Resource Include="Images\HorsesMask\mask_0001.png" />
+    <Resource Include="Images\HorsesMask\mask_0002.png" />
+    <Resource Include="Images\HorsesMask\mask_0003.png" />
+    <Resource Include="Images\HorsesMask\mask_0004.png" />
+    <Resource Include="Images\HorsesMask\mask_0005.png" />
+    <Resource Include="Images\HorsesMask\mask_0006.png" />
+    <Resource Include="Images\HorsesMask\mask_0007.png" />
+    <Resource Include="Images\HorsesMask\mask_0008.png" />
+    <Resource Include="Images\HorsesMask\mask_0009.png" />
+    <Resource Include="Images\HorsesMask\mask_0010.png" />
+    <Resource Include="Images\HorsesMask\mask_0011.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0000.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0001.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0002.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0003.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0004.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0005.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0006.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0007.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0008.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0009.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0010.png" />
+    <Resource Include="Images\Horses\WithOutBorder_0011.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 1\\oop laba 1 zavdanya 5\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 1\\oop laba 1 zavdanya 5\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T08:50:48.352Z",
               "EditorCaption": ""

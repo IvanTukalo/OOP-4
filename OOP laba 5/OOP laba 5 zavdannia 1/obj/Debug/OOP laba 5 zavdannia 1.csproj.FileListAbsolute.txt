@@ -1,0 +1,19 @@
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.csproj.AssemblyReference.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\MainWindow.g.cs
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\App.g.cs
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1_MarkupCompile.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1_MarkupCompile.lref
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\OOP laba 5 zavdannia 1.exe.config
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\OOP laba 5 zavdannia 1.exe
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\OOP laba 5 zavdannia 1.pdb
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\WriteableBitmapEx.Wpf.dll
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\WriteableBitmapEx.Wpf.pdb
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\bin\Debug\WriteableBitmapEx.Wpf.xml
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\MainWindow.baml
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.g.resources
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP_laba_5_zavdannia_1.Properties.Resources.resources
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.csproj.GenerateResource.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.csproj.CoreCompileInputs.cache
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba.0F3234B7.Up2Date
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.exe
+C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\obj\Debug\OOP laba 5 zavdannia 1.pdb
