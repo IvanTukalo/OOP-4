@@ -1,122 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
+using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.IO;
-using System.Windows;
-using System.Windows.Media.Imaging;
+
 namespace HorseRaceSimulator
 {
-    public class Horse : INotifyPropertyChanged
+    public class Horse 
     {
-        // Статический генератор случайных чисел для всех экземпляров класса
-        private static readonly Random Rng = new Random();
-
-        // Основные свойства коня
         public string Name { get; private set; }
-        public SolidColorBrush ColorBrush { get; private set; }
-        public List<ImageSource> AnimationFrames { get; private set; }
+        public SolidColorBrush Color { get; private set; }
+        public TimeSpan Time { get; private set; }
+        public int TrackX { get; private set; } = 0;
+        public int Position { get; set; } = 0;
+        public int Speed { get; set; }
+        public double Coefficient { get; set; } = 2.0;
+        public bool IsSelected { get; set; } = true;
+        public int Money { get; set; } = 0;
+        public List<ImageSource> AnimationFrames { get; set; } = new List<ImageSource>();
+        public int CurrentFrameIndex { get; set; } = 0;
+        public ImageSource CurrentFrame => AnimationFrames.Count > 0 ? AnimationFrames[CurrentFrameIndex] : null;
 
-        // Поля для симуляции
-        private double _positionX;
-        private TimeSpan _raceTime;
-        private double _coefficient;
-        private double _betAmount;
-        private int _currentFrameIndex = 0;
-        private readonly double _baseSpeed;
-        private double _currentAcceleration = 0;
+        private Stopwatch stopwatch = new Stopwatch();
+        private static readonly Random random = new Random();
+        private static readonly object randLock = new object();
 
-        // Свойства с уведомлением об изменении для привязки к DataGrid
-        public double PositionX
-        {
-            get => _positionX;
-            set { _positionX = value; OnPropertyChanged(); OnPropertyChanged(nameof(DisplayPosition)); }
-        }
-
-        // Для красивого отображения в таблице
-        public int DisplayPosition => (int)_positionX;
-
-        public TimeSpan RaceTime
-        {
-            get => _raceTime;
-            set { _raceTime = value; OnPropertyChanged(); }
-        }
-
-        public double Coefficient
-        {
-            get => _coefficient;
-            set { _coefficient = value; OnPropertyChanged(); }
-        }
-
-        public double BetAmount
-        {
-            get => _betAmount;
-            set { _betAmount = value; OnPropertyChanged(); }
-        }
-
-        public Horse(string name, Color color, List<ImageSource> AnimationFrames)
+        public Horse(string name, SolidColorBrush color, int speed)
         {
             Name = name;
-            ColorBrush = new SolidColorBrush(color);
-            this.AnimationFrames = AnimationFrames ?? new List<ImageSource>();
-
-            // Загружаем и раскрашиваем анимации
-
-            // Инициализация случайных параметров
-            _baseSpeed = Rng.Next(5, 11); // Базовая скорость
-            Coefficient = Math.Round(1.5 + Rng.NextDouble() * 3, 2); // Начальный коэффициент
+            Color = color;
+            Speed = speed;
         }
 
-        // Асинхронный метод для изменения ускорения
-        public async Task ChangeAcceleration()
+        public void StartMoving(Barrier barrier, int finishX, Action redraw, CancellationToken token, Action<Horse> onFinish)
         {
-            // Имитация случайного рывка
-            _currentAcceleration = _baseSpeed * (0.7 + Rng.NextDouble() * 0.3);
-            // Небольшая задержка, чтобы Task не завершался мгновенно
-            await Task.Delay(1);
-        }
+            stopwatch.Start();
 
-        // Метод для обновления позиции и анимации
-        public void Move()
-        {
-            PositionX += _currentAcceleration;
-            _currentFrameIndex = (_currentFrameIndex + 1) % AnimationFrames.Count;
-        }
+            Task.Run(async () =>
+            {
+                while (TrackX < finishX && !token.IsCancellationRequested)
+                {
+                    double modifier;
+                    lock (randLock)
+                    {
+                        modifier = 1 + random.NextDouble();
+                    }
 
-        // Метод для сброса состояния коня перед новой гонкой
+                    int adjustedSpeed = (int)(Speed * modifier);
+                    TrackX += adjustedSpeed;
+
+                    try
+                    {
+                        CurrentFrameIndex = (CurrentFrameIndex + 1) % AnimationFrames.Count;
+                        redraw?.Invoke();
+                        await Task.Delay(100);
+                        barrier.SignalAndWait(token);
+                    }
+                    catch (OperationCanceledException) { break; }
+                }
+
+                if (!token.IsCancellationRequested)
+                {
+                    stopwatch.Stop();
+                    Time = stopwatch.Elapsed;
+                    onFinish?.Invoke(this);
+                }
+            }, token);
+        }
         public void Reset()
         {
-            PositionX = 0;
-            RaceTime = TimeSpan.Zero;
-            BetAmount = 0;
-            _currentFrameIndex = 0;
+            TrackX = 0;
+            Position = 0;
+            Time = TimeSpan.Zero;
+            CurrentFrameIndex = 0;
         }
-
-        // Метод для отрисовки коня на холсте
-        public void Render(DrawingContext dc, double yPosition)
-        {
-            if (AnimationFrames != null && AnimationFrames.Any())
-            {
-                var frame = AnimationFrames[_currentFrameIndex];
-                // Рисуем коня в его текущей X позиции и на переданной Y-дорожке
-                dc.DrawImage(frame, new Rect(PositionX, yPosition, frame.Width, frame.Height));
-            }
-        }
-
-        #region Код для загрузки и раскраски изображений (из задания)
-
-        #endregion
-
-        #region Реализация INotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-        #endregion
     }
 }

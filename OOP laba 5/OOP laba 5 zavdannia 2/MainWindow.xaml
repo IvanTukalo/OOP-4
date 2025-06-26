@@ -1,12 +1,90 @@
-﻿<Window x:Class="OOP_laba_5_zavdannia_2.MainWindow"
+﻿<Window x:Class="VoronoiDiagram.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:OOP_laba_5_zavdannia_2"
+        xmlns:local="clr-namespace:VoronoiDiagram"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Діаграма Вороного (Перероблена версія)" Height="700" Width="1000" Focusable="True" KeyDown="Window_KeyDown">
+    <Window.Resources>
+        <local:BoolToBrushConverter x:Key="BoolToBrushConverter"/>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" BorderBrush="Gainsboro" BorderThickness="0,0,1,0" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Керування" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="ЛКМ - додати точку. Виділити точку - клік по ній. Delete - видалити виділену." TextWrapping="Wrap" Margin="0,0,0,15"/>
+
+                <Button Content="Побудувати/Оновити Діаграму" Click="DrawDiagramButton_Click" FontWeight="Bold" Background="#FFD8F6D8" Margin="0,0,0,15"/>
+
+                <TextBlock Text="Режим обчислень:" Margin="0,0,0,5"/>
+                <ComboBox x:Name="ModeComboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="Один потік"/>
+                    <ComboBoxItem Content="Багато потоків"/>
+                </ComboBox>
+
+                <TextBlock Text="Метрика відстані:" Margin="0,10,0,5"/>
+                <ComboBox x:Name="MetricComboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="Евклідова"/>
+                    <ComboBoxItem Content="Манхеттенська"/>
+                    <ComboBoxItem Content="Чебишова (Максимум)"/>
+                </ComboBox>
+
+                <GroupBox Header="Генерація вершин" Margin="0,15,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Кількість:" Margin="0,0,0,5"/>
+                        <TextBox x:Name="RandomPointsCount" Text="50"/>
+                        <Button Content="Згенерувати випадково" x:Name="GenerateButton" Click="GenerateButton_Click" Margin="0,10,0,0"/>
+                        <Button Content="Очистити все" x:Name="ClearButton" Click="ClearButton_Click" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Видалення найменших областей" Margin="0,15,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Видалити (%):"/>
+                        <TextBox x:Name="RemovePercentage" Text="10"/>
+                        <Button Content="Видалити найменші" x:Name="RemoveSmallestButton" Click="RemoveSmallestButton_Click" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Статистика останньої побудови" Margin="0,20,0,0" Padding="10">
+                    <StackPanel>
+                        <TextBlock><Run Text="Реальний час: "/><Run x:Name="RealTimeTextBlock" Text="0 ms"/></TextBlock>
+                        <TextBlock Margin="0,5,0,0"><Run Text="Час процесора: "/><Run x:Name="CpuTimeTextBlock" Text="0 ms"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Column="1" Background="WhiteSmoke">
+            <Image x:Name="VoronoiImage" Stretch="Fill" Panel.ZIndex="1"/>
+
+            <ItemsControl ItemsSource="{Binding Points}" MouseLeftButtonDown="DrawingCanvas_MouseLeftButtonDown" Panel.ZIndex="2">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Canvas Background="Transparent"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Canvas.Left" Value="{Binding X}" />
+                        <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Ellipse Width="8" Height="8" StrokeThickness="1.5"
+                                 Fill="{Binding IsSelected, Converter={StaticResource BoolToBrushConverter}}"
+                                 Stroke="White"
+                                 MouseLeftButtonDown="Point_MouseLeftButtonDown"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
     </Grid>
 </Window>

@@ -5,86 +5,151 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorseRaceSimulator"
         mc:Ignorable="d"
-        Title="Симулятор кінних перегонів" Height="720" Width="1280">
+        Title="Task1" 
+        WindowState="Maximized"
+        ResizeMode="CanResize"
+        Topmost="False">
+    <Window.Resources>
+        <Style x:Key="dataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="LightGray" />
+            <Setter Property="RowBackground" Value="White" />
+            <Setter Property="AlternatingRowBackground" Value="LightBlue" />
+            <Setter Property="HorizontalGridLinesBrush" Value="DarkGray"/>
+            <Setter Property="VerticalGridLinesBrush" Value="DarkGray"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserResizeColumns" Value="True"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <!-- Панель керування -->
-            <RowDefinition Height="*"/>
-            <!-- Поле для перегонів -->
-            <RowDefinition Height="200"/>
-            <!-- Таблиця результатів -->
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-
-        <!-- Верхня панель керування -->
-        <Border Grid.Row="0" Background="#F0F0F0" Padding="10" BorderBrush="Gray" BorderThickness="0,0,0,1">
-            <StackPanel Orientation="Horizontal">
-                <!-- Секція ставок -->
-                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
-                    <TextBlock Text="Ваш баланс:" FontWeight="Bold"/>
-                    <TextBlock x:Name="BalanceText" Text="250 $" FontSize="16"/>
-                </StackPanel>
-
-                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
-                    <TextBlock Text="Ставка на:" FontWeight="Bold"/>
-                    <ComboBox x:Name="HorsesComboBox" Width="120" DisplayMemberPath="Name"/>
-                </StackPanel>
-
-                <StackPanel Orientation="Vertical" Margin="0,0,20,0">
-                    <TextBlock Text="Сума ставки:" FontWeight="Bold"/>
-                    <TextBox x:Name="BetAmountTextBox" Text="20" Width="60" TextAlignment="Right"/>
-                </StackPanel>
-
-                <Button x:Name="BetButton" Content="Зробити ставку" VerticalAlignment="Bottom" Padding="10,5" Click="BetButton_Click"/>
-
-                <!-- Секція керування симуляцією -->
-                <Button x:Name="StartButton" Content="СТАРТ" Margin="50,0,0,0" VerticalAlignment="Bottom" Padding="20,5" FontWeight="Bold" Background="LightGreen" Click="StartButton_Click"/>
-
-                <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                    <TextBlock Text="Кількість учасників:" FontWeight="Bold"/>
-                    <ComboBox x:Name="HorseCountComboBox" SelectedIndex="3" Width="50" SelectionChanged="HorseCountComboBox_SelectionChanged">
-                        <ComboBoxItem Content="2"/>
-                        <ComboBoxItem Content="3"/>
-                        <ComboBoxItem Content="4"/>
-                        <ComboBoxItem Content="5"/>
-                        <ComboBoxItem Content="6"/>
-                        <ComboBoxItem Content="7"/>
-                        <ComboBoxItem Content="8"/>
-                        <ComboBoxItem Content="9"/>
-                        <ComboBoxItem Content="10"/>
-                    </ComboBox>
-                </StackPanel>
-
-            </StackPanel>
-        </Border>
-
-        <!-- Ігрове поле -->
-        <Canvas Name="canvas" Grid.Column="1" Grid.Row="0" >
+        <Canvas Name="canvas" Grid.Column="1" Grid.Row="0" Background="Transparent">
             <Image 
-        Width="{Binding ActualWidth, ElementName=canvas}"
-        Height="434"
-       Canvas.Left="0" Canvas.Top="64"
-       Stretch="Fill"
-       Source="C:\Users\Laplace\Desktop\OOP-4\OOP laba 5\OOP laba 5 zavdannia 1\Images\Background\Track.png" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                Width="{Binding ActualWidth, ElementName=canvas}"
+                Height="{Binding ActualHeight, ElementName=canvas}"
+               Canvas.Left="0" Canvas.Top="0"
+               Stretch="Fill"
+               Source="Images\Background\Track.png" />
         </Canvas>
 
-        <!-- Таблиця результатів -->
-        <DataGrid Grid.Row="2" x:Name="ResultsGrid" AutoGenerateColumns="False" CanUserSortColumns="True"
-                  IsReadOnly="True" ItemsSource="{Binding Horses}" MaxHeight="250">
+        <DataGrid Name="dataGrid" Grid.Column="1" Grid.Row="1"
+                  Style="{StaticResource dataGridStyle}"
+                  ItemsSource="{Binding Horses}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Позиція" Binding="{Binding DisplayPosition, Mode=OneWay}" SortDirection="Descending"/>
-                <DataGridTemplateColumn Header="Колір">
+                <DataGridTemplateColumn Header="Color" >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Rectangle Fill="{Binding ColorBrush}" Width="20" Height="20" Margin="5"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Ellipse Fill="{Binding Color}" Width="20" Height="20" Margin="0,0,5,0"/>
+                            </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Ім'я" Binding="{Binding Name, Mode=OneWay}"/>
-                <DataGridTextColumn Header="Час" Binding="{Binding RaceTime, Mode=OneWay, StringFormat='mm\\:ss\\.fff'}"/>
-                <DataGridTextColumn Header="Коефіцієнт" Binding="{Binding Coefficient, Mode=OneWay}"/>
-                <DataGridTextColumn Header="Ваша ставка" Binding="{Binding BetAmount, Mode=OneWay, StringFormat=C}"/>
+                </DataGridTemplateColumn >
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Position" Binding="{Binding Position}"/>
+                <DataGridTextColumn Header="Time" Binding="{Binding Timer}"/>
+                <DataGridTextColumn Header="Coefficient" Binding="{Binding Coefficient}"/>
+                <DataGridTextColumn Header="Money" Binding="{Binding Money}"/>
             </DataGrid.Columns>
         </DataGrid>
+        <StackPanel Orientation="Vertical" Margin="20" Width="200" Background="White" HorizontalAlignment="Center">
+            <!-- Заголовок -->
+            <TextBlock Text="Bettings"
+               FontSize="20"
+               Foreground="Orange"
+               FontWeight="Bold"
+               TextAlignment="Center"
+               Margin="0,10,0,5" />
+
+            <Separator/>
+
+            <!-- Баланс -->
+            <TextBlock Text="{Binding BalanceText}"
+               FontSize="14"
+               Margin="0,10,0,5"
+               HorizontalAlignment="Center">
+
+            </TextBlock>
+
+            <!-- Сума ставки -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+
+                <TextBox Text="{Binding BetAmount, UpdateSourceTrigger=PropertyChanged}" 
+             Width="60"
+             HorizontalContentAlignment="Center"
+             FontSize="14"
+             FontWeight="Bold"
+             Foreground="Orange"
+             Margin="10,0"
+             PreviewTextInput="BetAmountBox_PreviewTextInput"
+             TextAlignment="Center"/>
+            </StackPanel>
+
+            <TextBlock Text="bet on the horse" 
+               FontSize="12"
+               Foreground="Gray"
+               HorizontalAlignment="Center"
+               Margin="0,5"/>
+
+            <!-- Вибір коня -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="&lt;" Width="30" Height="25" Click="PreviousHorse_Click"/>
+                <TextBlock Text="{Binding SelectedHorseText}" 
+                   Foreground="Orange"
+                   FontWeight="Bold"
+                   Margin="10,0"/>
+                <Button Content="&gt;" Width="30" Height="25" Click="NextHorse_Click"/>
+            </StackPanel>
+
+            <!-- Кнопка ставки -->
+            <Button Content="BET" 
+            Margin="0,10,0,0"
+            Height="30" 
+            Width="100"
+            HorizontalAlignment="Center"
+            Background="White"
+            BorderBrush="Black"
+            Click="Bet_Click"/>
+            <Button Content="Start Race" 
+        Margin="0,10,0,0"
+        Height="30" 
+        Width="100"
+        HorizontalAlignment="Center"
+        Background="LightGreen"
+        Click="StartRace_Click"/>
+            <!-- Вибір коней (флажки) -->
+            <TextBlock Text="Select horses:" 
+           FontWeight="Bold"
+           Foreground="Black"
+           Margin="0,10,0,5"
+           HorizontalAlignment="Center"/>
+           
+           
+            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                <CheckBox x:Name="CheckAnton" Content="Anton" Margin="5,2"/>
+                <CheckBox x:Name="CheckDima" Content="Dima" Margin="5,2"/>
+                <CheckBox x:Name="CheckIvan" Content="Ivan" Margin="5,2"/>
+                <CheckBox x:Name="CheckArtem" Content="Artem" Margin="5,2"/>
+                <CheckBox x:Name="CheckSasha" Content="Sasha" Margin="5,2"/>
+                <CheckBox x:Name="CheckAnna" Content="Anna" Margin="5,2"/>
+                <CheckBox x:Name="CheckOleg" Content="Oleg" Margin="5,2"/>
+                <CheckBox x:Name="CheckMax" Content="Max" Margin="5,2"/>
+                <CheckBox x:Name="CheckVova" Content="Vova" Margin="5,2"/>
+                <CheckBox x:Name="CheckIgor" Content="Igor" Margin="5,2"/>
+            </StackPanel>
+
+        </StackPanel>
+
     </Grid>
 </Window>
