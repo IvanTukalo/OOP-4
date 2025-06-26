@@ -1,0 +1,49 @@
+﻿<Window x:Class="OOP_laba_4.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Облік студентів" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <ListView x:Name="StudentsListView" Grid.Column="0" SelectionChanged="StudentsListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Прізвище та ім'я" Width="250">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}{0} {1}">
+                                            <Binding Path="PersonInfo.LastName" />
+                                            <Binding Path="PersonInfo.FirstName" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Рівень освіти" Width="150" DisplayMemberBinding="{Binding EducationLevel}"/>
+                    <GridViewColumn Header="Середній бал" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding AverageGrade, StringFormat=F2}" HorizontalAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StackPanel Grid.Column="1" Margin="10,0,0,0">
+            <Button x:Name="AddButton" Content="Додати студента" Width="150" Margin="5" Click="AddButton_Click"/>
+            <Button x:Name="EditButton" Content="Редагувати" Width="150" Margin="5" IsEnabled="False" Click="EditButton_Click"/>
+            <Button x:Name="DeleteButton" Content="Видалити" Width="150" Margin="5" IsEnabled="False" Click="DeleteButton_Click"/>
+            <Button x:Name="DetailsButton" Content="Детальна інформація" Width="150" Margin="5,20,5,5" IsEnabled="False" Click="DetailsButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

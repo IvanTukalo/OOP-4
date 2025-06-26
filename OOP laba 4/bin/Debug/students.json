@@ -1,0 +1,37 @@
+[
+  {
+    "PersonInfo": {
+      "FirstName": "\u041F\u043E\u043C\u0456\u0434\u043E\u0440",
+      "LastName": "\u041E\u0432\u043E\u0447",
+      "BirthDate": "2007-07-08T00:00:00"
+    },
+    "EducationLevel": 2,
+    "Exams": [
+      {
+        "SubjectName": "\u041B\u0456\u0446\u0435\u043D\u0437\u0456\u044F \u043E\u0432\u043E\u0447\u0430",
+        "Grade": 100,
+        "ExamDate": "2025-06-26T00:00:00"
+      },
+      {
+        "SubjectName": "\u0412\u043E\u0434\u0456\u0439\u0441\u044C\u043A\u0456 \u043F\u0440\u0430\u0432\u0430",
+        "Grade": 77,
+        "ExamDate": "2025-06-26T00:00:00"
+      }
+    ]
+  },
+  {
+    "PersonInfo": {
+      "FirstName": "Bob",
+      "LastName": "Bobiy",
+      "BirthDate": "2008-02-22T00:00:00"
+    },
+    "EducationLevel": 1,
+    "Exams": [
+      {
+        "SubjectName": "Human license",
+        "Grade": 99,
+        "ExamDate": "2025-06-04T00:00:00"
+      }
+    ]
+  }
+]

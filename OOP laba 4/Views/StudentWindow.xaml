@@ -1,0 +1,60 @@
+﻿<Window x:Class="OOP_laba_4.Views.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактор студента" Width="450" Height="600" WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Особиста інформація" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="Ім'я:" VerticalAlignment="Center"/>
+                <TextBox x:Name="FirstNameTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Content="Прізвище:" VerticalAlignment="Center"/>
+                <TextBox x:Name="LastNameTextBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Content="Дата народження:" VerticalAlignment="Center"/>
+                <DatePicker x:Name="BirthDatePicker" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Content="Освітній рівень:" VerticalAlignment="Center"/>
+                <ComboBox x:Name="EducationLevelComboBox" Grid.Row="3" Grid.Column="1" Margin="5"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Header="Складені іспити" Padding="5" Margin="0,10,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ListBox x:Name="ExamsListBox" Grid.Row="0" SelectionChanged="ExamsListBox_SelectionChanged"/>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5,0,0">
+                    <Button x:Name="AddExamButton" Content="Додати іспит" Width="120" Margin="5" Click="AddExamButton_Click"/>
+                    <Button x:Name="EditExamButton" Content="Редагувати" Width="100" Margin="5" IsEnabled="False" Click="EditExamButton_Click"/>
+                    <Button x:Name="DeleteExamButton" Content="Видалити" Width="100" Margin="5" IsEnabled="False" Click="DeleteExamButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button Content="Зберегти і закрити" Width="150" Margin="5" IsDefault="True" Click="SaveButton_Click"/>
+            <Button Content="Скасувати і закрити" Width="150" Margin="5" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
