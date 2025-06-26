@@ -18,5 +18,14 @@
         "ExamDate": "2025-06-26T00:00:00"
       }
     ]
+  },
+  {
+    "PersonInfo": {
+      "FirstName": "\u0406\u043C\u0027\u044F",
+      "LastName": "\u041F\u0440\u0456\u0437\u0432\u0438\u0449\u0435",
+      "BirthDate": "2007-06-16T00:00:00"
+    },
+    "EducationLevel": 0,
+    "Exams": []
   }
 ]

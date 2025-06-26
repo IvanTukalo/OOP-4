@@ -35,7 +35,7 @@ namespace OOP_laba_4.Views
                 CurrentExam.Grade = grade;
                 CurrentExam.ExamDate = ExamDatePicker.SelectedDate ?? DateTime.Now;
 
-                // Валідація на рівні бізнес-об'єкта спрацює автоматично в сеттерах
+                // Валідація на рівні бізнес-об'Exception спрацює автоматично в сеттерах
                 this.DialogResult = true;
             }
             catch (Exception ex)
