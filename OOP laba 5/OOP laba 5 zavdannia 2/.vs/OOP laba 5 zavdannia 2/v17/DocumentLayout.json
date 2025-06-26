@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 5\\oop laba 5 zavdannia 2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\voronoialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:voronoialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 5\\oop laba 5 zavdannia 2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{23D47C84-AAE1-45D2-95E5-89788986F26C}|OOP laba 5 zavdannia 2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "VoronoiAlgorithm.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\VoronoiAlgorithm.cs",
               "RelativeDocumentMoniker": "VoronoiAlgorithm.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\VoronoiAlgorithm.cs",
               "RelativeToolTip": "VoronoiAlgorithm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T12:57:49.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ViewModels.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\ViewModels.cs",
               "RelativeDocumentMoniker": "ViewModels.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\ViewModels.cs",
               "RelativeToolTip": "ViewModels.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T12:57:18.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -68,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAWwI0AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 5\\OOP laba 5 zavdannia 2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T19:40:03.834Z",
               "EditorCaption": ""
