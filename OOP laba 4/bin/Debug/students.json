@@ -18,20 +18,5 @@
         "ExamDate": "2025-06-26T00:00:00"
       }
     ]
-  },
-  {
-    "PersonInfo": {
-      "FirstName": "Bob",
-      "LastName": "Bobiy",
-      "BirthDate": "2008-02-22T00:00:00"
-    },
-    "EducationLevel": 1,
-    "Exams": [
-      {
-        "SubjectName": "Human license",
-        "Grade": 99,
-        "ExamDate": "2025-06-04T00:00:00"
-      }
-    ]
   }
 ]

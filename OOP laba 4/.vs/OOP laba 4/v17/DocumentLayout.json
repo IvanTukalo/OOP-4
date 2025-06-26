@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\educationlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\educationlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\examwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\examwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\obj\\Debug\\Views\\ExamWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Views\\ExamWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\studentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\studentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\studentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\studentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\services\\serializationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:services\\serializationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\examwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\examwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\dtos\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +51,16 @@
       "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:dtos\\examdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\models\\educationlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:models\\educationlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,26 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\examwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\examwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\studentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\studentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\studentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\studentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\views\\examwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:views\\examwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|c:\\users\\laplace\\desktop\\oop-4\\oop laba 4\\services\\serializationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E41571-C94E-4C2E-B670-EF88C8356D36}|OOP laba 4.csproj|solutionrelative:services\\serializationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,11 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "ExamWindow.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\obj\\Debug\\Views\\ExamWindow.g.i.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\Views\\ExamWindow.g.i.cs",
+              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\obj\\Debug\\Views\\ExamWindow.g.i.cs",
+              "RelativeToolTip": "obj\\Debug\\Views\\ExamWindow.g.i.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwF0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T03:41:50.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -103,20 +120,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\MainWindow.xaml.cs",
               "RelativeToolTip": "Views\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:19:09.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
@@ -128,20 +145,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "StudentWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\StudentWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\StudentWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\StudentWindow.xaml.cs",
               "RelativeToolTip": "Views\\StudentWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwIIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:14:42.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "StudentWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\StudentWindow.xaml",
               "RelativeDocumentMoniker": "Views\\StudentWindow.xaml",
@@ -153,20 +170,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "ExamWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\ExamWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ExamWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\ExamWindow.xaml.cs",
               "RelativeToolTip": "Views\\ExamWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwCgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:12:33.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "ExamWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Views\\ExamWindow.xaml",
               "RelativeDocumentMoniker": "Views\\ExamWindow.xaml",
@@ -178,20 +195,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "SerializationService.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Services\\SerializationService.cs",
               "RelativeDocumentMoniker": "Services\\SerializationService.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Services\\SerializationService.cs",
               "RelativeToolTip": "Services\\SerializationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAEwBgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:10:22.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "StudentDto.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\DTOs\\StudentDto.cs",
               "RelativeDocumentMoniker": "DTOs\\StudentDto.cs",
@@ -204,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "ExamDto.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\DTOs\\ExamDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ExamDto.cs",
@@ -217,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "PersonDto.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\DTOs\\PersonDto.cs",
               "RelativeDocumentMoniker": "DTOs\\PersonDto.cs",
@@ -230,52 +247,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Student.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Student.cs",
               "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:08:11.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Exam.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Exam.cs",
               "RelativeDocumentMoniker": "Models\\Exam.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Exam.cs",
               "RelativeToolTip": "Models\\Exam.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAvwDEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:07:46.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Person.cs",
               "RelativeDocumentMoniker": "Models\\Person.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\Person.cs",
               "RelativeToolTip": "Models\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:07:14.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "EducationLevel.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\EducationLevel.cs",
               "RelativeDocumentMoniker": "Models\\EducationLevel.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 4\\Models\\EducationLevel.cs",
               "RelativeToolTip": "Models\\EducationLevel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T02:06:13.298Z",
               "EditorCaption": ""

@@ -10,6 +10,6 @@ namespace OOP_laba_4.Models
     {
         Bachelor,   // Бакалавр
         Specialist, // Спеціаліст
-        Master      // Магістр
+        Master,      // Магістр
     }
 }
