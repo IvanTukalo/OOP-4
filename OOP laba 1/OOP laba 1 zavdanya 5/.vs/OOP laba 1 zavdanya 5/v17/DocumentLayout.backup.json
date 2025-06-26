@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{53D5290A-3AAC-416D-945F-37135B34DF69}|OOP laba 1 zavdanya 5.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\obj\\Debug\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Laplace\\AppData\\Local\\Temp\\.vsdbgsrc\\ee59f8695a3f2260b67eed4d47fe909a382a76ce9a20540e22ce920e9e79a351\\Window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -21,11 +25,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainWindow.g.cs",
+              "DocumentMoniker": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\obj\\Debug\\MainWindow.g.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\MainWindow.g.cs",
+              "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\obj\\Debug\\MainWindow.g.cs",
+              "RelativeToolTip": "obj\\Debug\\MainWindow.g.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAwwL8AAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T07:49:27.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Window.cs",
               "DocumentMoniker": "C:\\Users\\Laplace\\AppData\\Local\\Temp\\.vsdbgsrc\\ee59f8695a3f2260b67eed4d47fe909a382a76ce9a20540e22ce920e9e79a351\\Window.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ee59f8695a3f2260b67eed4d47fe909a382a76ce9a20540e22ce920e9e79a351\\Window.cs",
@@ -56,7 +73,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Laplace\\Desktop\\OOP-4\\OOP laba 1\\OOP laba 1 zavdanya 5\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAQwEYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T08:50:48.352Z",
               "EditorCaption": ""
